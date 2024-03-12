@@ -52,7 +52,7 @@ function ModernUnlockSessionPage() {
 					<div className="mx-auto w-full max-w-320 sm:mx-0 sm:w-320">
 						<img
 							className="w-48"
-							src="assets/images/logo/logo.svg"
+							src="assets/images/logo/commune.svg"
 							alt="logo"
 						/>
 
@@ -201,7 +201,7 @@ function ModernUnlockSessionPage() {
 					<div className="relative z-10 w-full max-w-2xl">
 						<div className="text-7xl font-bold leading-none text-gray-100">
 							<div>Welcome to</div>
-							<div>our community</div>
+							<div>commune</div>
 						</div>
 						<div className="mt-24 text-lg leading-6 tracking-tight text-gray-400">
 							Fuse helps developers to build organized and well coded dashboards full of beautiful and

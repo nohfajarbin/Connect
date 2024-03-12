@@ -22,7 +22,7 @@ function ModernInvoicePage() {
 									<div className="w-96 place-self-center">
 										<img
 											className="w-96"
-											src="assets/images/logo/logo.svg"
+											src="assets/images/logo/commune.svg"
 											alt="lozgo"
 										/>
 									</div>
@@ -221,7 +221,7 @@ function ModernInvoicePage() {
 							<div className="mt-16 flex items-start">
 								<img
 									className="flex-0 mt-8 w-40"
-									src="assets/images/logo/logo.svg"
+									src="assets/images/logo/commune.svg"
 									alt="logo"
 								/>
 								<Typography
