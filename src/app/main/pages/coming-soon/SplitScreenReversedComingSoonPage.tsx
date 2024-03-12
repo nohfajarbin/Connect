@@ -109,13 +109,13 @@ function SplitScreenReversedComingSoonPage() {
 				<div className="relative z-10 w-full max-w-2xl">
 					<div className="text-7xl font-bold leading-none text-gray-100">
 						<div>Welcome to</div>
-						<div>our community</div>
+						<div>commune</div>
 					</div>
 					<div className="mt-24 text-lg leading-6 tracking-tight text-gray-400">
-						Fuse helps developers to build organized and well coded dashboards full of beautiful and rich
-						modules. Join us and start building your application today.
+						We are sculpting the future of AI app deployments with an avant-garde touch that prioritizes lineage and shared experiences. 
+
 					</div>
-					<div className="mt-32 flex items-center">
+					{/* {<div className="mt-32 flex items-center">
 						<AvatarGroup
 							sx={{
 								'& .MuiAvatar-root': {
@@ -132,7 +132,7 @@ function SplitScreenReversedComingSoonPage() {
 						<div className="ml-16 font-medium tracking-tight text-gray-400">
 							More than 17k people joined us, it's your turn
 						</div>
-					</div>
+					</div>} */}
 				</div>
 			</Box>
 
@@ -140,7 +140,7 @@ function SplitScreenReversedComingSoonPage() {
 				<div className="mx-auto w-full max-w-320 sm:mx-0 sm:w-320">
 					<img
 						className="w-48"
-						src="assets/images/logo/logo.svg"
+						src="assets/images/logo/commune.svg"
 						alt="logo"
 					/>
 
