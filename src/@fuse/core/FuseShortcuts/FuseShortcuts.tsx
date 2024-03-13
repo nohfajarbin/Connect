@@ -78,55 +78,6 @@ function FuseShortcuts(props: FuseShortcutsProps) {
 
 	return (
 		<div className={clsx('flex flex-1', variant === 'vertical' && 'shrink grow-0 flex-col', className)}>
-			{useMemo(() => {
-				return (
-					<div className={clsx('flex flex-1', variant === 'vertical' && 'flex-col')}>
-						{shortcutItems.map(
-							(_item) =>
-								_item && (
-									<Link
-										to={_item.url}
-										key={_item.id}
-										role="button"
-									>
-										<Tooltip
-											title={_item.title}
-											placement={variant === 'horizontal' ? 'bottom' : 'left'}
-										>
-											<IconButton
-												className="h-40 w-40 p-0"
-												size="large"
-											>
-												{_item.icon ? (
-													<FuseSvgIcon>{_item.icon}</FuseSvgIcon>
-												) : (
-													<span className="text-20 font-semibold uppercase">
-														{_item.title[0]}
-													</span>
-												)}
-											</IconButton>
-										</Tooltip>
-									</Link>
-								)
-						)}
-
-						<Tooltip
-							title="Click to add/remove shortcut"
-							placement={variant === 'horizontal' ? 'bottom' : 'left'}
-						>
-							<IconButton
-								className="h-40 w-40 p-0"
-								aria-haspopup="true"
-								onClick={addMenuClick}
-								size="large"
-							>
-								<FuseSvgIcon sx={{ color: amber[600] }}>heroicons-solid:star</FuseSvgIcon>
-							</IconButton>
-						</Tooltip>
-					</div>
-				);
-			}, [addMenu, variant, shortcutItems])}
-
 			<Menu
 				id="add-menu"
 				anchorEl={addMenu}

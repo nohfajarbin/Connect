@@ -47,7 +47,7 @@ function NavbarMobileLayout2(props: NavbarMobileLayout2Props) {
 		<Root className={clsx('flex h-full flex-col overflow-hidden', className)}>
 			<div className="flex h-48 shrink-0 flex-row items-center px-20 md:h-72">
 				<div className="mx-4 flex flex-1">
-					<Logo />
+					{/* <Logo /> */}
 				</div>
 
 				<NavbarToggleButton className="h-40 w-40 p-0" />

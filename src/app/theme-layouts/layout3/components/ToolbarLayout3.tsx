@@ -46,7 +46,7 @@ function ToolbarLayout3(props: ToolbarLayout3Props) {
 
 					<Hidden lgDown>
 						<div className={clsx('flex shrink-0 items-center')}>
-							<Logo />
+							{/* <Logo /> */}
 						</div>
 					</Hidden>
 
