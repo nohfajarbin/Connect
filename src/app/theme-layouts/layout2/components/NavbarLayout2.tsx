@@ -24,7 +24,7 @@ function NavbarLayout2(props: NavbarLayout2Props) {
 		<Root className={clsx('h-64 max-h-64 min-h-64 w-full shadow-md', className)}>
 			<div className="container z-20 flex h-full w-full flex-auto items-center justify-between p-0 lg:px-24">
 				<div className="flex shrink-0 items-center px-8">
-					<Logo />
+					{/* <Logo /> */}
 				</div>
 
 				<FuseScrollbars className="flex h-full items-center">

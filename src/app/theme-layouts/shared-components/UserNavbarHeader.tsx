@@ -40,19 +40,11 @@ function UserNavbarHeader() {
 						color: 'text.secondary'
 					}}
 					className="avatar h-96 w-96 text-32 font-bold"
-					src={user.data.photoURL}
-					alt={user.data.displayName}
+					src="assets/images/logo/commune.svg"
+					alt="commune logo"
 				>
-					{user.data.displayName.charAt(0)}
 				</Avatar>
 			</div>
-			<Typography className="username whitespace-nowrap text-14 font-medium">{user.data.displayName}</Typography>
-			<Typography
-				className="email whitespace-nowrap text-13 font-medium"
-				color="text.secondary"
-			>
-				{user.data.email}
-			</Typography>
 		</Root>
 	);
 }
