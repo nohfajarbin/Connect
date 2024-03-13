@@ -71,6 +71,38 @@ const navigationConfig: FuseNavigationType = [
 		type: 'item',
 		icon: 'heroicons-outline:cog',
 		url: '/'
+	},
+	{
+		id: 'auth',
+		title: 'Auth',
+		type: 'group',
+		icon: 'verified_user',
+		children: [
+			{
+				id: 'sign-in',
+				title: 'Sign in',
+				type: 'item',
+				url: 'sign-in',
+				auth: authRoles.onlyGuest,
+				icon: 'lock'
+			},
+			{
+				id: 'register',
+				title: 'Register',
+				type: 'item',
+				url: 'register',
+				auth: authRoles.onlyGuest,
+				icon: 'person_add'
+			},
+			{
+				id: 'sign-out',
+				title: 'Sign out',
+				type: 'item',
+				auth: authRoles.user,
+				url: 'sign-out',
+				icon: 'exit_to_app'
+			}
+		]
 	}
 ];
 
