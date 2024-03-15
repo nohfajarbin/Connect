@@ -25570,10 +25570,10 @@
             },
             "currentRange": "DT",
             "data": {
-              "name": "Due Tasks",
+              "name": "Modules",
               "count": {
                 "DY": 21,
-                "DT": 25,
+                "DT": 178,
                 "DTM": 19
               },
               "extra": {
@@ -25590,8 +25590,8 @@
           "overdue": {
             "title": "Overdue",
             "data": {
-              "name": "Tasks",
-              "count": 4,
+              "name": "Dialy users",
+              "count": 20,
               "extra": {
                 "name": "Yesterday's overdue",
                 "count": 2
@@ -25602,8 +25602,8 @@
           "issues": {
             "title": "Issues",
             "data": {
-              "name": "Open",
-              "count": 32,
+              "name": "Modules pending",
+              "count": 190,
               "extra": {
                 "name": "Closed today",
                 "count": 0
@@ -25614,8 +25614,8 @@
           "features": {
             "title": "Features",
             "data": {
-              "name": "Proposals",
-              "count": 42,
+              "name": "Review requests",
+              "count": 12,
               "extra": {
                 "name": "Implemented",
                 "count": 8
@@ -25658,7 +25658,7 @@
             "series": {
               "this-week": [
                 {
-                  "name": "New issues",
+                  "name": "Open AI",
                   "type": "line",
                   "data": [
                     42,
@@ -25669,24 +25669,11 @@
                     25,
                     22
                   ]
-                },
-                {
-                  "name": "Closed issues",
-                  "type": "column",
-                  "data": [
-                    11,
-                    10,
-                    8,
-                    11,
-                    8,
-                    10,
-                    17
-                  ]
                 }
               ],
               "last-week": [
                 {
-                  "name": "New issues",
+                  "name": "Open AI",
                   "type": "line",
                   "data": [
                     37,
@@ -25696,19 +25683,6 @@
                     18,
                     24,
                     20
-                  ]
-                },
-                {
-                  "name": "Closed issues",
-                  "type": "column",
-                  "data": [
-                    9,
-                    8,
-                    10,
-                    12,
-                    7,
-                    11,
-                    15
                   ]
                 }
               ]
@@ -29878,47 +29852,147 @@
           },
           "recentTransactions": {
             "columns": [
-              "Transaction ID",
-              "Date",
+              "Module ID",
               "Name",
-              "Amount",
+              "Email",
+              "Date",
               "Status"
             ],
             "rows": [
               {
-                "id": "528651571NT",
-                "date": "2019-10-07T22:22:37.274Z",
-                "name": "Morgan Page",
-                "amount": 1358.75,
-                "status": "completed"
+                "checkbox": "",
+                "id": "#5286515",
+                "Name": "Open AI",
+                "Email": "asadf@gmail.com",
+                "Date": "12 DEC, 2020",
+                "status": "completed",
+                "trash": ""
               },
               {
-                "id": "421436904YT",
-                "date": "2019-12-18T14:51:24.461Z",
-                "name": "Nita Hebert",
-                "amount": -1042.82,
-                "status": "completed"
+                "checkbox": "",
+                "id": "#4214369",
+                "Name": "Mistral",
+                "Email": "asadf@gmail.com",
+                "Date": "12 DEC, 2020",
+                "status": "completed",
+                "trash": ""
               },
               {
-                "id": "685377421YT",
-                "date": "2019-12-25T17:52:14.304Z",
-                "name": "Marsha Chambers",
-                "amount": 1828.16,
-                "status": "pending"
+                "checkbox": "",
+                "id": "#6853774",
+                "Name": "Liama 13b",
+                "Email": "asadf@gmail.com",
+                "Date": "12 DEC, 2020",
+                "status": "pending",
+                "trash": ""
               },
               {
-                "id": "884960091RT",
-                "date": "2019-11-29T06:32:16.111Z",
-                "name": "Charmaine Jackson",
-                "amount": 1647.55,
-                "status": "completed"
+                "checkbox": "",
+                "id": "#8849600",
+                "Name": "Liama 13b",
+                "Email": "asadf@gmail.com",
+                "Date": "12 DEC, 2020",
+                "status": "completed",
+                "trash": ""
               },
               {
-                "id": "361402213NT",
-                "date": "2019-11-24T12:13:23.064Z",
-                "name": "Maura Carey",
-                "amount": -927.43,
-                "status": "completed"
+                "checkbox": "",
+                "id": "#3614022",
+                "Name": "Liama 13b",
+                "Email": "asadf@gmail.com",
+                "Date": "12 DEC, 2020",
+                "status": "completed",
+                "trash": ""
+              },
+              {
+                "checkbox": "",
+                "id": "#5286515",
+                "Name": "Open AI",
+                "Email": "asadf@gmail.com",
+                "Date": "12 DEC, 2020",
+                "status": "completed",
+                "trash": ""
+              },
+              {
+                "checkbox": "",
+                "id": "#4214369",
+                "Name": "Mistral",
+                "Email": "asadf@gmail.com",
+                "Date": "12 DEC, 2020",
+                "status": "completed",
+                "trash": ""
+              },
+              {
+                "checkbox": "",
+                "id": "#6853774",
+                "Name": "Liama 13b",
+                "Email": "asadf@gmail.com",
+                "Date": "12 DEC, 2020",
+                "status": "pending",
+                "trash": ""
+              },
+              {
+                "checkbox": "",
+                "id": "#8849600",
+                "Name": "Liama 13b",
+                "Email": "asadf@gmail.com",
+                "Date": "12 DEC, 2020",
+                "status": "completed",
+                "trash": ""
+              },
+              {
+                "checkbox": "",
+                "id": "#3614022",
+                "Name": "Liama 13b",
+                "Email": "asadf@gmail.com",
+                "Date": "12 DEC, 2020",
+                "status": "completed",
+                "trash": ""
+              },
+              {
+                "checkbox": "",
+                "id": "#5286515",
+                "Name": "Open AI",
+                "Email": "asadf@gmail.com",
+                "Date": "12 DEC, 2020",
+                "status": "completed",
+                "trash": ""
+              },
+              {
+                "checkbox": "",
+                "id": "#4214369",
+                "Name": "Mistral",
+                "Email": "asadf@gmail.com",
+                "Date": "12 DEC, 2020",
+                "status": "completed",
+                "trash": ""
+              },
+              {
+                "checkbox": "",
+                "id": "#6853774",
+                "Name": "Liama 13b",
+                "Email": "asadf@gmail.com",
+                "Date": "12 DEC, 2020",
+                "status": "pending",
+                "trash": ""
+              },
+              {
+                "checkbox": "",
+                "id": "#8849600",
+                "Name": "Liama 13b",
+                "Email": "asadf@gmail.com",
+                "Date": "12 DEC, 2020",
+                "status": "completed",
+                "trash": ""
+              },
+              {
+                "checkbox": "",
+                "id": "#3614022",
+                "Name": "Liama 13b",
+                "Email": "asadf@gmail.com",
+                "Date": "12 DEC, 2020",
+                "status": "completed",
+                "trash": ""
               }
             ]
           }

@@ -25,19 +25,7 @@ function ContactsHeader() {
 					animate={{ x: 0, transition: { delay: 0.2 } }}
 				>
 					<Typography className="text-24 md:text-32 font-extrabold tracking-tight leading-none">
-						Contacts
-					</Typography>
-				</motion.span>
-				<motion.span
-					initial={{ y: -20, opacity: 0 }}
-					animate={{ y: 0, opacity: 1, transition: { delay: 0.2 } }}
-				>
-					<Typography
-						component={motion.span}
-						className="text-14 font-medium ml-2"
-						color="text.secondary"
-					>
-						{`${filteredData.length} contacts`}
+						OpenAI Module Info
 					</Typography>
 				</motion.span>
 			</div>
@@ -56,7 +44,7 @@ function ContactsHeader() {
 					</FuseSvgIcon>
 
 					<Input
-						placeholder="Search contacts"
+						placeholder="Search user"
 						className="flex flex-1 px-16"
 						disableUnderline
 						fullWidth
@@ -73,9 +61,10 @@ function ContactsHeader() {
 					color="secondary"
 					component={NavLinkAdapter}
 					to="new/edit"
+					style={{width: "130px"}}
 				>
 					<FuseSvgIcon size={20}>heroicons-outline:plus</FuseSvgIcon>
-					<span className="mx-8">Add</span>
+					<span className="mx-8">Add user</span>
 				</Button>
 			</div>
 		</div>

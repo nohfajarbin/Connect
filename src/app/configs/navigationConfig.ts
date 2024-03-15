@@ -20,28 +20,28 @@ const navigationConfig: FuseNavigationType = [
 		id: 'dashboards.project',
 		title: 'Dashboard',
 		type: 'item',
-		icon: 'heroicons-outline:clipboard-check',
+		icon: 'heroicons-outline:view-grid',
 		url: '/dashboards/project'
 	},
 	{
 		id: 'dashboards.analytics',
 		title: 'Analytics',
 		type: 'item',
-		icon: 'heroicons-outline:chart-pie',
+		icon: 'heroicons-outline:chart-square-bar',
 		url: '/dashboards/analytics'
 	},
 	{
 		id: 'dashboards.finance',
 		title: 'Modules',
 		type: 'item',
-		icon: 'heroicons-outline:cash',
+		icon: 'heroicons-outline:table',
 		url: '/dashboards/finance'
 	},
 	{
 		id: 'dashboards.crypto',
 		title: 'Schedule',
 		type: 'item',
-		icon: 'heroicons-outline:currency-dollar',
+		icon: 'heroicons-outline:document-report',
 		url: '/dashboards/crypto'
 	},
 	{
@@ -50,6 +50,13 @@ const navigationConfig: FuseNavigationType = [
 		type: 'item',
 		icon: 'heroicons-outline:calendar',
 		url: '/apps/calendar'
+	},
+	{
+		id: 'apps.modulecard',
+		title: 'ModuleCard',
+		type: 'item',
+		icon: 'heroicons-outline:chip',
+		url: '/apps/contacts'
 	},
 	{
 		id: 'apps.chat',
@@ -63,14 +70,14 @@ const navigationConfig: FuseNavigationType = [
 		title: 'Notification',
 		type: 'item',
 		icon: 'heroicons-outline:bell',
-		url: '/'
+		url: '/undefined'
 	},
 	{
 		id: 'apps.contacts',
 		title: 'settings',
 		type: 'item',
 		icon: 'heroicons-outline:cog',
-		url: '/'
+		url: '/undefined'
 	},
 	{
 		id: 'auth',

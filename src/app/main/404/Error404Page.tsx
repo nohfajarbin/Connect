@@ -243,7 +243,7 @@ function Error404Page() {
 						color="text.secondary"
 						className="mt-8 text-center text-lg font-medium tracking-tight md:text-xl"
 					>
-						The page you requested could not be found.
+						The page you requested has not yet been found.
 					</Typography>
 				</motion.div>
 				<Link
