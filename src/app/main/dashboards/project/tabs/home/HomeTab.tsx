@@ -6,6 +6,9 @@ import FeaturesWidget from './widgets/FeaturesWidget';
 import GithubIssuesWidget from './widgets/GithubIssuesWidget';
 import TaskDistributionWidget from './widgets/TaskDistributionWidget';
 import ScheduleWidget from './widgets/ScheduleWidget';
+import AnalyticsWidget from './widgets/AnalyticsWidget';
+import RecentRequestsWidget from './widgets/RecentRequestsWidget';
+import MostusedmodulesWidget from './widgets/MostusedmodulesWidget';
 
 /**
  * The HomeTab component.
@@ -45,21 +48,29 @@ function HomeTab() {
 			</motion.div>
 			<motion.div
 				variants={item}
-				className="sm:col-span-2 md:col-span-4"
+				className="sm:col-span-2 md:col-span-2"
 			>
 				<GithubIssuesWidget />
 			</motion.div>
 			<motion.div
 				variants={item}
-				className="sm:col-span-2 md:col-span-4 lg:col-span-2"
+				className="sm:col-span-2 md:col-span-2"
 			>
-				<TaskDistributionWidget />
+				<AnalyticsWidget />
 			</motion.div>
+
 			<motion.div
 				variants={item}
-				className="sm:col-span-2 md:col-span-4 lg:col-span-2"
+				className="sm:col-span-2 md:col-span-2"
 			>
-				<ScheduleWidget />
+				<RecentRequestsWidget />
+			</motion.div>
+
+			<motion.div
+				variants={item}
+				className="sm:col-span-2 md:col-span-2"
+			>
+				<MostusedmodulesWidget />
 			</motion.div>
 		</motion.div>
 	);

@@ -114,7 +114,7 @@ function InvoiceTab(props: InvoiceTabProps) {
 							<div className="seller flex items-center p-16">
 								<img
 									className="w-80"
-									src="assets/images/logo/commune.svg"
+									src="assets/images/logo/logo.svg"
 									alt="logo"
 								/>
 
@@ -259,7 +259,7 @@ function InvoiceTab(props: InvoiceTabProps) {
 								<div className="shrink-0">
 									<img
 										className="w-32"
-										src="assets/images/logo/commune.svg"
+										src="assets/images/logo/logo.svg"
 										alt="logo"
 									/>
 								</div>

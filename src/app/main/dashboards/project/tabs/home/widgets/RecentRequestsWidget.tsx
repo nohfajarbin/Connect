@@ -9,29 +9,32 @@ import { memo } from 'react';
 import format from 'date-fns/format';
 import clsx from 'clsx';
 import Button from '@mui/material/Button';
-import { Checkbox, IconButton } from '@mui/material';
 import { useAppSelector } from 'app/store';
-import { selectWidgets } from '../store/widgetsSlice';
-import RecentTransactionsWidgetType from '../types/RecentTransactionsWidgetType';
-import FuseSvgIcon from '@fuse/core/FuseSvgIcon';
-import Rating from '@mui/material/Rating';
 
 /**
  * The RecentTransactionsWidget widget.
  */
-function RecentTransactionsWidget() {
-	const widgets = useAppSelector(selectWidgets);
-	const { columns, rows } = widgets.recentTransactions as RecentTransactionsWidgetType;
+function RecentRequestsWidget() {
+	const columns = ["Request ID", "Module Name", "Request Type", "Request Size(mb)", "Tokens charged"];
+    const rows = [
+        ["#876364", "Liama 3b", "PUT", "325", 146660],
+        ["#876364", "Mistal", "GET", "53", 46660],
+        ["#876364", "Open AI", "POST", "78", 346675],
+        ["#876364", "Stable Diffusion", "PATCH", "98", 346981],
+    ];
 
 	return (
 		<Paper className="flex flex-col flex-auto p-24 shadow rounded-2xl overflow-hidden">
+			<div>
+				<Typography className="mr-16 text-lg font-medium tracking-tight leading-6 truncate">
+					Recent Requests
+				</Typography>
+			</div>
+
 			<div className="table-responsive mt-24">
 				<Table className="simple w-full min-w-full">
 					<TableHead>
 						<TableRow>
-							<TableCell style={{width: "50px"}}>
-							<Checkbox style={{marginLeft: "-8px"}}/>
-							</TableCell>
 							{columns.map((column, index) => (
 								<TableCell key={index}>
 									<Typography
@@ -42,15 +45,6 @@ function RecentTransactionsWidget() {
 									</Typography>
 								</TableCell>
 							))}
-
-							<TableCell>
-								{/* <FuseSvgIcon className="text-white opacity-75">
-								heroicons-outline:trash
-								</FuseSvgIcon> */}
-								<IconButton aria-label="Add photo">
-									<FuseSvgIcon size={20}>heroicons-outline:trash</FuseSvgIcon>
-								</IconButton>
-							</TableCell>
 						</TableRow>
 					</TableHead>
 
@@ -59,34 +53,7 @@ function RecentTransactionsWidget() {
 							<TableRow key={index}>
 								{Object.entries(row).map(([key, value]) => {
 									switch (key) {
-										case 'trash': {
-											return (
-												<TableCell 
-													key={key}
-													component="th"
-													scope="row" 
-												>
-													<div style={{display: "flex", justifyContent: "start", alignItems: "center"}}>
-														<Rating name="customized-1" defaultValue={0} max={1} style={{marginLeft: "-100px", marginRight: "70px"}} />
-														<IconButton aria-label="Add photo">
-															<FuseSvgIcon size={20}>heroicons-outline:dots-horizontal</FuseSvgIcon>
-														</IconButton>
-													</div>
-												</TableCell>
-											);
-										}
-										case 'checkbox': {
-											return (
-												<TableCell
-													key={key}
-													component="th"
-													scope="row" 
-													style={{width: "50px"}}>
-													<Checkbox />
-												</TableCell>
-											);
-										}
-										case 'id': {
+										case 'Request ID': {
 											return (
 												<TableCell
 													key={key}
@@ -97,18 +64,18 @@ function RecentTransactionsWidget() {
 												</TableCell>
 											);
 										}
-										case 'Name': {
+										case 'Module Name': {
 											return (
 												<TableCell
 													key={key}
 													component="th"
 													scope="row"
 												>
-													<Typography>{value}</Typography>
+													<Typography>{format(new Date(value), 'MMM dd, y')}</Typography>
 												</TableCell>
 											);
 										}
-										case 'Email': {
+										case 'Request Type': {
 											return (
 												<TableCell
 													key={key}
@@ -116,12 +83,15 @@ function RecentTransactionsWidget() {
 													scope="row"
 												>
 													<Typography>
-														{value}
+														{value.toLocaleString('en-US', {
+															style: 'currency',
+															currency: 'USD'
+														})}
 													</Typography>
 												</TableCell>
 											);
 										}
-										case 'status': {
+										case 'Request Size(mb)': {
 											return (
 												<TableCell
 													key={key}
@@ -136,7 +106,6 @@ function RecentTransactionsWidget() {
 															value === 'completed' &&
 																'bg-green-50 text-green-800 dark:bg-green-600 dark:text-green-50'
 														)}
-														style={{height: "30px", width: "100px", display: "flex", justifyContent: "center"}}
 													>
 														{value}
 													</Typography>
@@ -160,9 +129,12 @@ function RecentTransactionsWidget() {
 						))}
 					</TableBody>
 				</Table>
+				<div className="pt-24">
+					<Button variant="outlined">See all transactions</Button>
+				</div>
 			</div>
 		</Paper>
 	);
 }
 
-export default memo(RecentTransactionsWidget);
+export default memo(RecentRequestsWidget);

@@ -46,41 +46,13 @@ function FinanceDashboardApp() {
 							initial="hidden"
 							animate="show"
 						>
-							<div className="grid grid-cols-1 xl:grid-cols-2 gap-32 w-full mt-32">
-								<div className="grid gap-32 sm:grid-flow-col xl:grid-flow-row">
-									<motion.div
-										variants={item}
-										className="flex flex-col flex-auto"
-									>
-										<PreviousStatementWidget />
-									</motion.div>
 
-									<motion.div
-										variants={item}
-										className="flex flex-col flex-auto"
-									>
-										<CurrentStatementWidget />
-									</motion.div>
-								</div>
-								<motion.div
-									variants={item}
-									className="flex flex-col flex-auto"
-								>
-									<AccountBalanceWidget />
-								</motion.div>
-							</div>
 							<div className="grid grid-cols-1 xl:grid-cols-3 gap-32 w-full mt-32">
 								<motion.div
 									variants={item}
-									className="xl:col-span-2 flex flex-col flex-auto"
+									className="xl:col-span-3 flex flex-col flex-auto"
 								>
 									<RecentTransactionsWidget />
-								</motion.div>
-								<motion.div
-									variants={item}
-									className="flex flex-col flex-auto"
-								>
-									<BudgetWidget />
 								</motion.div>
 							</div>
 						</motion.div>
