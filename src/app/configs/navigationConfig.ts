@@ -4,7 +4,6 @@ import ar from './navigation-i18n/ar';
 import en from './navigation-i18n/en';
 import tr from './navigation-i18n/tr';
 import { authRoles } from '../auth';
-import DocumentationNavigation from '../main/documentation/DocumentationNavigation';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 
 i18next.addResourceBundle('en', 'navigation', en);
